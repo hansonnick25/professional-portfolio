@@ -62,9 +62,24 @@ li a:hover {
   width: 33.33%;
 }
 
+/* Resume Section */
+#resume {
+  background-color: var(--darkBlue);
+}
+
+iframe {
+  display: flex;
+  text-align: center;
+  margin: auto;
+  padding: auto;
+  width: 80%;
+  height: 600px;
+}
+
 /* Contact Section */
 #contact {
   background-color: var(--blue);
+  padding-bottom: 5%;
 }
 
 .contact-form {
@@ -72,14 +87,26 @@ li a:hover {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  /* text-align: center; */
+}
+
+.input-text {
+  background-color: var(--offWhite);
+  padding-bottom: 0.5%;
+  margin-bottom: 0.5%;
+  text-align: center;
+  border: #000000 3px ridge;
+  box-shadow: 10px #000000;
 }
 
 .input-button {
   background-color: var(--darkBlue);
-  border: none;
-  border-radius: 15%;
+  border: #000000 3px ridge;
+  box-shadow: 10px #000000;
   color: var(--offWhite);
   font-size: 16px;
   padding: 0.5%;
+}
+
+.input-button:hover {
+  background-color: var(--red);
 }
