@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Montserrat';
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
   line-height: 1.5;
   background-color: var(--offWhite);
 }
@@ -24,17 +24,17 @@ img {
 /* Navbar Styling */
 .top-nav {
   background-color: var(--darkBlue);
-  list-style-type: none;
-  font-size: 22px;
-  width: 100%;
+}
+.top-nav ul {
+  display: flex;
+  flex-direction: row;
 }
 
-.top-nav {
-  display: flex;
-  flex-direction: column;
-  text-align: right;
+.top-nav li {
+  font-size: 16px;
+  list-style-type: none;
   margin: 0;
-  padding: 0.5rem;
+  padding: 0.25%;
 }
 
 .top-nav a {
@@ -51,13 +51,13 @@ li a:hover {
 }
 
 .portfolio-items {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  width: 100%;
 }
 
-.portfolio-items > * {
+.individual-item {
   padding-bottom: 2%;
   width: 33.33%;
 }
@@ -68,9 +68,18 @@ li a:hover {
 }
 
 .contact-form {
+  align-items: center;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  align-items: center;
   /* text-align: center; */
+}
+
+.input-button {
+  background-color: var(--darkBlue);
+  border: none;
+  border-radius: 15%;
+  color: var(--offWhite);
+  font-size: 16px;
+  padding: 0.5%;
 }
