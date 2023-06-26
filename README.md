@@ -9,3 +9,7 @@ A personal and professional portfolio, will eventually link out to my other proj
 ## Contributing
 
 This is my personal project, I've worked on it alone and will be setting up branch protection.
+
+## Screenshot
+
+![website screenshot](assets/images/websiteScreenshot0626.png)
