@@ -3,93 +3,133 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nick Hanson - Portfolio</title>
-    <link rel="stylesheet" href="assets/css/reset.css" />
+    <title>Nick Hanson</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
-    <nav class="top-nav">
+    <nav class="navbar bg-primary text-primary-content">
       <ul>
-        <li><a href="#top">Nick Hanson</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
         <li>
-          <a href="https://github.com/hansonnick25" target="_blanke">Github</a>
+          <a class="btn btn-ghost normal-case text-xl" href="#introduction"
+            >Nick Hanson</a
+          >
+        </li>
+        <li>
+          <a class="btn btn-ghost normal-case text-xl" href="#portfolio"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a class="btn btn-ghost normal-case text-xl" href="#resume">Resume</a>
+        </li>
+        <li>
+          <a class="btn btn-ghost normal-case text-xl" href="#contact"
+            >Contact</a
+          >
         </li>
       </ul>
     </nav>
+    <div class="container mx-auto text-primary-content text-center">
+      <section id="introduction">
+        <h1>Nick Hanson</h1>
+        <h2>Full Stack Web Developer</h2>
+        <div class="grid grid-cols-2">
+          <p>
+            I am a full stack web developer with a passion for learning and
+            creating. I have experience with HTML, CSS, JavaScript, Node.js,
+            Express.js, MySQL, MongoDB, and React.js. I am currently working on
+            expanding my knowledge of React.js and learning more about the MERN
+            stack. I am also working on a few projects to add to my portfolio.
+          </p>
+          <div class="avatar justify-center">
+            <div class="w-24 rounded">
+              <img src="assets/images/logo.png" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section id="portfolio">
-      <h1>Portfolio</h1>
-      <div class="portfolio-items">
-        <div class="individual-item">
-          <h3>Portfolio Item One</h3>
-          <img src="assets/images/logo.png" alt="Portfolio Item One" />
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="grid grid-cols-2 gap-5">
+          <div class="card bg-primary text-primary-content">
+            <div class="card-body">
+              <h2 class="card-title">Movie Quiz Project</h2>
+              <p>Do you have what it takes to win this quiz?</p>
+              <div class="card-actions justify-end">
+                <div>
+                  <a
+                    href="https://hansonnick25.github.io/movie-quiz/"
+                    target="_blank"
+                    class="btn btn-black text-white"
+                    >Try Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-primary text-primary-content">
+            <div class="card-body">
+              <h2 class="card-title">Movie Quiz Project</h2>
+              <p>Do you have what it takes to win this quiz?</p>
+              <div class="card-actions justify-end">
+                <div>
+                  <a
+                    href="https://hansonnick25.github.io/movie-quiz/"
+                    target="_blank"
+                    class="btn btn-black text-white"
+                    >Try Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="individual-item">
-          <h3>Portfolio Item Two</h3>
-          <img src="assets/images/logo.png" alt="Portfolio Item One" />
-        </div>
-        <div class="individual-item">
-          <h3>Portfolio Item Three</h3>
-          <img src="assets/images/logo.png" alt="Portfolio Item One" />
-        </div>
-        <div class="individual-item">
-          <h3>Portfolio Item Four</h3>
-          <img src="assets/images/logo.png" alt="Portfolio Item One" />
-        </div>
-        <div class="individual-item">
-          <h3>Portfolio Item Five</h3>
-          <img src="assets/images/logo.png" alt="Portfolio Item One" />
-        </div>
-        <div class="individual-item">
-          <h3>Portfolio Item Six</h3>
-          <img src="assets/images/logo.png" alt="Portfolio Item One" />
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="resume">
-      <h1>Resume</h1>
-      <div>
-        <iframe src="assets/pdf/ResumeNickHanson.pdf"></iframe>
-      </div>
-    </section>
+      <section id="resume">
+        <h2>Resume</h2>
+        <div class="hero-content">
+          <iframe
+            src="assets/pdf/ResumeNickHanson.pdf"
+            style="width: 100%; height: 30rem"
+          ></iframe>
+        </div>
+      </section>
 
-    <section id="contact">
-      <h1>Contact</h1>
-      <form
-        action="mailto:hansonnick25@gmail.com"
-        class="contact-form"
-        enctype="multipart/form-data"
-        method="post"
-      >
-        <input
-          type="text"
-          name=""
-          class="input-text"
-          value=""
-          placeholder="Your Name"
-        />
-        <input
-          type="email"
-          name=""
-          class="input-text"
-          value=""
-          placeholder="Your Email"
-        />
-        <textarea
-          name="Your Message"
-          class="input-text"
-          rows="5"
-          cols="40"
-          placeholder="Your Message"
-        ></textarea
-        ><br />
-        <input type="submit" name="submit-button" class="input-button" />
-      </form>
-    </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="flex flex-col items-center">
+          <form
+            action="mailto:hansonnick25@gmail.com"
+            enctype="multipart/form-data"
+            method="post"
+          >
+            <input
+              type="text"
+              placeholder="Your Name"
+              class="input input-bordered w-full max-w-xs"
+            />
+            <input
+              type="text"
+              placeholder="Your Email"
+              class="input input-bordered w-full max-w-xs"
+            />
+            <textarea
+              class="textarea textarea-bordered"
+              placeholder="Your Message"
+            ></textarea>
+            <button class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
